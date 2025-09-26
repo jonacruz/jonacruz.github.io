@@ -1,0 +1,113 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EDoctronics — Aprende Componentes Electrónicos</title>
+  <meta name="description" content="EDoctronics: app educativa para aprender componentes electrónicos con lecciones, pruebas interactivas y simuladores." />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">EDoctronics</a>
+      <nav class="nav">
+        <a href="#features">Características</a>
+        <a href="#screens">Pantallas</a>
+        <a href="#download" class="cta">Descargar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Aprende componentes electrónicos</h1>
+          <p class="lead">EDoctronics es una aplicación que busca ayudar a estudiantes y amantes de la electrónica con los conceptos esenciales para comenzar a aprender.</p>
+
+          <div class="badges">
+            <a id="download" class="btn btn-primary" href="https://apps.apple.com/us/app/edoctronics/id6752360310" aria-label="Descargar EDoctronics en App Store">Descargar (iOS)</a>
+            <!-- <a class="btn btn-outline" href="#" aria-label="Descargar EDoctronics en Google Play">Descargar (Android)</a> -->
+          </div>
+
+          <ul class="quick-features">
+            <li>Resistencias</li>
+            <li>Compuertas lógicas</li>
+            <li>Leds</li>
+          </ul>
+        </div>
+
+        <div class="hero-mockup" aria-hidden="true">
+          <div class="phone-mock">
+            <div class="screen"> <img alt="Mockup de la app" src="images/home.png" width="300" height="600" ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="container features">
+      <h2>¿Qué puedes aprender?</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Resistencias</h3>
+          <p>Obtener el valor de una resistencia de 4, 5 y 6 bandas eligiendo el color por banda.</p>
+        </article>
+        <article class="card">
+          <h3>Compuertas lógicas</h3>
+          <p>Consulta las tablas de verdad de cada compuerta lógica como AND, OR, NOT, NAND, NOR, XOR, XNOR.</p>
+        </article>
+        <article class="card">
+          <h3>Leds</h3>
+          <p>Descubre las características principales de cada led mediante su color.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="screens" class="container screens">
+      <h2>Pantallas</h2>
+      <div class="screenshot-grid">
+        <figure>
+          <img alt="Lección sobre resistencias" src="images/resistence.png" width="400" height="280">
+          <figcaption>Resistencias</figcaption>
+        </figure>
+        <figure>
+          <img alt="Simulador de circuito" src="images/logic-gate.png" width="400" height="280">
+          <figcaption>Compuertas lógicas</figcaption>
+        </figure>
+        <figure>
+          <img alt="Reto y calificación" src="images/leds.png" width="400" height="280">
+          <figcaption>Resistencia de led</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="container about">
+      <h2>Perfecta para estudiantes</h2>
+      <p>EDoctronics está diseñada para que aprender electrónica sea accesible, práctica y divertida. No necesitas registro: todos los datos se almacenan localmente en tu dispositivo.</p>
+      <p class="muted">¿Necesitas soporte? Escríbenos a <a href="mailto:soporte@edoctronics.com">soporte@edoctronics.com</a></p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>EDoctronics</strong>
+        <p class="muted">© <span id="year"></span> EDoctronics — Aprendizaje práctico de electrónica</p>
+      </div>
+      <div class="footer-links">
+        <a href="privacy.html">Política de privacidad</a>
+        <a href="support.html">Soporte</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // pequeño script para año dinámico y accesibilidad
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
