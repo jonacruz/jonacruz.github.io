@@ -1,113 +1,180 @@
-<!-- index.html -->
 <!doctype html>
-<html lang="es">
+<html lang="es" data-lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EDoctronics — Aprende Componentes Electrónicos</title>
-  <meta name="description" content="EDoctronics: app educativa para aprender componentes electrónicos con lecciones, pruebas interactivas y simuladores." />
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <script>(function(){var l;try{var p=new URLSearchParams(location.search).get('lang');if(p==='es'||p==='en'){l=p;localStorage.setItem('lang',p)}else{l=localStorage.getItem('lang')}}catch(e){}if(l!=='es'&&l!=='en'){l=(navigator.language||'es').toLowerCase().indexOf('es')===0?'es':'en'}document.documentElement.setAttribute('data-lang',l);document.documentElement.lang=l})();</script>
+  <title data-en="Jonathan Cruz Orozco · iOS Apps">Jonathan Cruz Orozco · Apps para iOS</title>
+  <meta name="description" content="Apps para iPhone y iPad de Jonathan Cruz Orozco: Edoctronics, Letreo y LunaPOS." data-en="iPhone and iPad apps by Jonathan Cruz Orozco: Edoctronics, Letreo and LunaPOS.">
+  <meta name="author" content="Jonathan Cruz Orozco">
+  <link rel="canonical" href="https://miusuario.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jonathan Cruz Orozco · Apps para iOS">
+  <meta property="og:description" content="Apps para iPhone y iPad de Jonathan Cruz Orozco: Edoctronics, Letreo y LunaPOS.">
+  <meta property="og:url" content="https://miusuario.github.io/">
+  <meta name="theme-color" content="#F5F7FB" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#05070D" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script src="./assets/js/main.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main"><span data-l="es">Saltar al contenido</span><span data-l="en">Skip to content</span></a>
+
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#">EDoctronics</a>
-      <nav class="nav">
-        <a href="#features">Características</a>
-        <a href="#screens">Pantallas</a>
-        <a href="#download" class="cta">Descargar</a>
+      <a class="brand" href="./" aria-label="Jonathan Cruz Orozco">
+        <span class="brand-mark">JC</span>
+        <span class="brand-name">Jonathan Cruz Orozco</span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Principal">
+        <a href="./" aria-current="page"><span data-l="es">Inicio</span><span data-l="en">Home</span></a>
+        <a href="./apps/"><span data-l="es">Apps</span><span data-l="en">Apps</span></a>
+        <a href="./support/"><span data-l="es">Soporte</span><span data-l="en">Support</span></a>
+        <a href="./privacy/"><span data-l="es">Privacidad</span><span data-l="en">Privacy</span></a>
       </nav>
+      <div class="header-actions">
+        <button class="lang-toggle" type="button" aria-label="Cambiar idioma / Change language">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span data-l="es">EN</span><span data-l="en">ES</span>
+        </button>
+        <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Menú / Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <h1>Aprende componentes electrónicos</h1>
-          <p class="lead">EDoctronics es una aplicación que busca ayudar a estudiantes y amantes de la electrónica con los conceptos esenciales para comenzar a aprender.</p>
-
-          <div class="badges">
-            <a id="download" class="btn btn-primary" href="https://apps.apple.com/us/app/edoctronics/id6752360310" aria-label="Descargar EDoctronics en App Store">Descargar (iOS)</a>
-            <!-- <a class="btn btn-outline" href="#" aria-label="Descargar EDoctronics en Google Play">Descargar (Android)</a> -->
-          </div>
-
-          <ul class="quick-features">
-            <li>Resistencias</li>
-            <li>Compuertas lógicas</li>
-            <li>Leds</li>
-          </ul>
-        </div>
-
-        <div class="hero-mockup" aria-hidden="true">
-          <div class="phone-mock">
-            <div class="screen"> <img alt="Mockup de la app" src="images/home.png" width="300" height="600" ></div>
-          </div>
+      <div class="container">
+        <span class="eyebrow reveal"><span data-l="es">Desarrollador iOS independiente</span><span data-l="en">Independent iOS developer</span></span>
+        <h1 class="reveal reveal-2"><span data-l="es">Apps para iPhone y iPad <span class="accent">hechas con cuidado.</span></span><span data-l="en">iPhone and iPad apps <span class="accent">crafted with care.</span></span></h1>
+        <p class="lead reveal reveal-3"><span data-l="es">Hola, soy Jonathan Cruz Orozco. Diseño y desarrollo apps que resuelven problemas reales: educación, juegos de palabras y herramientas para pequeños negocios.</span><span data-l="en">Hi, I'm Jonathan Cruz Orozco. I design and build apps that solve real problems: education, word games and tools for small businesses.</span></p>
+        <div class="btn-row reveal reveal-3">
+          <a class="btn btn-primary" href="apps/"><span data-l="es">Ver mis apps</span><span data-l="en">See my apps</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-ghost" href="support/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6V14M12 17h.01"/></svg><span data-l="es">Soporte</span><span data-l="en">Support</span></a>
         </div>
       </div>
     </section>
 
-    <section id="features" class="container features">
-      <h2>¿Qué puedes aprender?</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>Resistencias</h3>
-          <p>Obtener el valor de una resistencia de 4, 5 y 6 bandas eligiendo el color por banda.</p>
-        </article>
-        <article class="card">
-          <h3>Compuertas lógicas</h3>
-          <p>Consulta las tablas de verdad de cada compuerta lógica como AND, OR, NOT, NAND, NOR, XOR, XNOR.</p>
-        </article>
-        <article class="card">
-          <h3>Leds</h3>
-          <p>Descubre las características principales de cada led mediante su color.</p>
-        </article>
+    <section class="section-tight">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow"><span data-l="es">Catálogo</span><span data-l="en">Catalog</span></span>
+          <h2><span data-l="es">Mis apps</span><span data-l="en">My apps</span></h2>
+          <p><span data-l="es">Cada app nace de una necesidad concreta y se cuida en cada detalle.</span><span data-l="en">Every app starts from a real need and is polished down to the details.</span></p>
+        </div>
+        <div class="app-grid">
+        <a class="app-card" href="./apps/edoctronics/">
+          <div class="app-card-top">
+            <img class="app-icon" src="./assets/img/apps/edoctronics/icon.png" alt="" width="72" height="72" loading="lazy">
+            <div>
+              <h3>Edoctronics</h3>
+              <span class="category"><span data-l="es">Educación</span><span data-l="en">Education</span></span>
+            </div>
+          </div>
+          <p><span data-l="es">Calculadoras, simuladores y pinouts para estudiantes, docentes y aficionados a la electrónica.</span><span data-l="en">Calculators, simulators and pinouts for electronics students, teachers and hobbyists.</span></p>
+          <div class="app-card-foot">
+            <span class="badge"><span data-l="es">Disponible</span><span data-l="en">Available</span></span>
+            <span class="more"><span data-l="es">Ver detalles</span><span data-l="en">Learn more</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </a>
+        <a class="app-card" href="./apps/letreo/">
+          <div class="app-card-top">
+            <img class="app-icon" src="./assets/img/apps/letreo/icon.png" alt="" width="72" height="72" loading="lazy">
+            <div>
+              <h3>Letreo</h3>
+              <span class="category"><span data-l="es">Juegos · Palabras</span><span data-l="en">Games · Word</span></span>
+            </div>
+          </div>
+          <p><span data-l="es">Sopa de letras moderna en español, con reto diario y modo infinito.</span><span data-l="en">A modern Spanish word search with a daily challenge and endless mode.</span></p>
+          <div class="app-card-foot">
+            <span class="badge"><span data-l="es">Disponible</span><span data-l="en">Available</span></span>
+            <span class="more"><span data-l="es">Ver detalles</span><span data-l="en">Learn more</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </a>
+        <a class="app-card" href="./apps/lunapos/">
+          <div class="app-card-top">
+            <img class="app-icon" src="./assets/img/apps/lunapos/icon.png" alt="" width="72" height="72" loading="lazy">
+            <div>
+              <h3>LunaPOS</h3>
+              <span class="category"><span data-l="es">Negocios</span><span data-l="en">Business</span></span>
+            </div>
+          </div>
+          <p><span data-l="es">Escanea, cobra y controla las ventas de tu tienda de abarrotes o pequeño negocio.</span><span data-l="en">Scan, charge and track sales for your grocery store or small business.</span></p>
+          <div class="app-card-foot">
+            <span class="badge badge-soon"><span data-l="es">Próximamente</span><span data-l="en">Coming soon</span></span>
+            <span class="more"><span data-l="es">Ver detalles</span><span data-l="en">Learn more</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </a>
+        </div>
       </div>
     </section>
 
-    <section id="screens" class="container screens">
-      <h2>Pantallas</h2>
-      <div class="screenshot-grid">
-        <figure>
-          <img alt="Lección sobre resistencias" src="images/resistence.png" width="400" height="280">
-          <figcaption>Resistencias</figcaption>
-        </figure>
-        <figure>
-          <img alt="Simulador de circuito" src="images/logic-gate.png" width="400" height="280">
-          <figcaption>Compuertas lógicas</figcaption>
-        </figure>
-        <figure>
-          <img alt="Reto y calificación" src="images/leds.png" width="400" height="280">
-          <figcaption>Resistencia de led</figcaption>
-        </figure>
+    <section class="section">
+      <div class="container about">
+        <div>
+          <span class="eyebrow"><span data-l="es">Sobre mí</span><span data-l="en">About me</span></span>
+          <h2><span data-l="es">Software nativo, claro y en tu idioma.</span><span data-l="en">Native software, clear and in your language.</span></h2>
+          <div data-l="es"><p>Soy desarrollador iOS independiente en México. Construyo apps nativas con Swift y SwiftUI, cuidando la arquitectura, el rendimiento y la experiencia de uso.</p><p>También impulso <a href="https://swiftlatam.dev" rel="noopener">SwiftLatam</a>, una comunidad para desarrolladores iOS hispanohablantes en Latinoamérica.</p></div><div data-l="en"><p>I'm an independent iOS developer based in Mexico. I build native apps with Swift and SwiftUI, with a focus on architecture, performance and user experience.</p><p>I also run <a href="https://swiftlatam.dev" rel="noopener">SwiftLatam</a>, a community for Spanish-speaking iOS developers in Latin America.</p></div>
+        </div>
+        <div>
+          <div class="stat-grid">
+            <div class="stat"><b>2</b><span><span data-l="es">apps publicadas</span><span data-l="en">published apps</span></span></div>
+            <div class="stat"><b>100%</b><span><span data-l="es">nativo con SwiftUI</span><span data-l="en">native SwiftUI</span></span></div>
+          </div>
+          <div class="chips">
+            <span class="chip">Swift</span><span class="chip">SwiftUI</span><span class="chip">SwiftData</span>
+            <span class="chip">StoreKit 2</span><span class="chip">SpriteKit</span><span class="chip">Firebase</span>
+            <span class="chip">Clean Architecture</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="container about">
-      <h2>Perfecta para estudiantes</h2>
-      <p>EDoctronics está diseñada para que aprender electrónica sea accesible, práctica y divertida. No necesitas registro: todos los datos se almacenan localmente en tu dispositivo.</p>
-      <p class="muted">¿Necesitas soporte? Escríbenos a <a href="mailto:soporte@edoctronics.com">soporte@edoctronics.com</a></p>
+    <section class="section-tight">
+      <div class="container">
+        <div class="cta">
+          <div>
+            <h2><span data-l="es">¿Tienes una duda o sugerencia?</span><span data-l="en">Have a question or suggestion?</span></h2>
+            <p><span data-l="es">Escríbeme y con gusto te ayudo.</span><span data-l="en">Drop me a line and I'll be happy to help.</span></p>
+          </div>
+          <a class="btn btn-light" href="support/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span data-l="es">Contactar soporte</span><span data-l="en">Contact support</span></a>
+        </div>
+      </div>
     </section>
 
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <strong>EDoctronics</strong>
-        <p class="muted">© <span id="year"></span> EDoctronics — Aprendizaje práctico de electrónica</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a class="brand" href="./"><span class="brand-mark">JC</span><span>Jonathan Cruz Orozco</span></a>
+          <p><span data-l="es">Desarrollador iOS independiente. Apps de educación, juegos y herramientas para negocios, hechas en México.</span><span data-l="en">Independent iOS developer. Education, games and business tools, made in Mexico.</span></p>
+        </div>
+        <div>
+          <h4><span data-l="es">Apps</span><span data-l="en">Apps</span></h4>
+          <ul>
+            <li><a href="./apps/edoctronics/">Edoctronics</a></li>
+            <li><a href="./apps/letreo/">Letreo</a></li>
+            <li><a href="./apps/lunapos/">LunaPOS</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4><span data-l="es">Ayuda</span><span data-l="en">Help</span></h4>
+          <ul>
+            <li><a href="./support/"><span data-l="es">Soporte</span><span data-l="en">Support</span></a></li>
+            <li><a href="./privacy/"><span data-l="es">Privacidad</span><span data-l="en">Privacy</span></a></li>
+            <li><a href="mailto:jonathan.support@gmail.com"><span data-l="es">Contacto</span><span data-l="en">Contact</span></a></li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-links">
-        <a href="privacy.html">Política de privacidad</a>
-        <a href="support.html">Soporte</a>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Jonathan Cruz Orozco</span>
+        <span><span data-l="es">Apple, iPhone, iPad y App Store son marcas de Apple Inc.</span><span data-l="en">Apple, iPhone, iPad and App Store are trademarks of Apple Inc.</span></span>
       </div>
     </div>
   </footer>
-
-  <script>
-    // pequeño script para año dinámico y accesibilidad
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
