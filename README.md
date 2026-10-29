@@ -10,10 +10,11 @@ index.html                  Inicio
 apps/index.html             Catálogo
 apps/edoctronics/           Detalle de Edoctronics
 apps/letreo/                Detalle de Letreo
-apps/lunapos/               Detalle de LunaPOS (Próximamente)
+apps/lunapos/               Detalle de LunaPOS
+apps/petscarnet/            Detalle de PetsCarnet (Próximamente)
 privacy/index.html          Índice de políticas
 privacy/<app>/              Política de privacidad de cada app
-support/index.html          Soporte y FAQ (anclas #edoctronics, #letreo, #lunapos)
+support/index.html          Soporte y FAQ (anclas #edoctronics, #letreo, #lunapos, #petscarnet)
 404.html                    Página de error
 assets/css/styles.css       Estilos y tokens de color
 assets/js/main.js           Idioma, menú móvil y año
@@ -23,13 +24,14 @@ assets/img/                 Favicon e imágenes de las apps
 
 ## URLs para App Store Connect
 
-Reemplaza `miusuario` por tu usuario de GitHub.
+Reemplaza `jonacruz` por tu usuario de GitHub.
 
 | App         | Privacidad                                      | Soporte                                       |
 |-------------|-------------------------------------------------|-----------------------------------------------|
-| Edoctronics | `https://miusuario.github.io/privacy/edoctronics/` | `https://miusuario.github.io/support/#edoctronics` |
-| Letreo      | `https://miusuario.github.io/privacy/letreo/`      | `https://miusuario.github.io/support/#letreo`      |
-| LunaPOS     | `https://miusuario.github.io/privacy/lunapos/`     | `https://miusuario.github.io/support/#lunapos`     |
+| Edoctronics | `https://jonacruz.github.io/privacy/edoctronics/` | `https://jonacruz.github.io/support/#edoctronics` |
+| Letreo      | `https://jonacruz.github.io/privacy/letreo/`      | `https://jonacruz.github.io/support/#letreo`      |
+| LunaPOS     | `https://jonacruz.github.io/privacy/lunapos/`     | `https://jonacruz.github.io/support/#lunapos`     |
+| PetsCarnet  | `https://jonacruz.github.io/privacy/petscarnet/`  | `https://jonacruz.github.io/support/#petscarnet`  |
 
 Para forzar un idioma en un enlace agrega `?lang=en` o `?lang=es` (por ejemplo, para la ficha en inglés del App Store). Sin el parámetro, el sitio usa el idioma que eligió el visitante o, la primera vez, el idioma del navegador.
 
@@ -60,19 +62,19 @@ Los colores están en las variables de `:root` al inicio de `assets/css/styles.c
 
 ## Publicar en GitHub Pages
 
-1. Crea un repositorio público llamado exactamente `miusuario.github.io`.
+1. Crea un repositorio público llamado exactamente `jonacruz.github.io`.
 2. Sube el contenido de esta carpeta a la raíz de la rama `main`:
    ```bash
    git init
    git add .
    git commit -m "Sitio inicial"
    git branch -M main
-   git remote add origin https://github.com/miusuario/miusuario.github.io.git
+   git remote add origin https://github.com/jonacruz/jonacruz.github.io.git
    git push -u origin main
    ```
 3. En el repositorio ve a **Settings › Pages** y en *Source* elige **Deploy from a branch**, rama `main`, carpeta `/ (root)`.
-4. Espera uno o dos minutos y abre `https://miusuario.github.io`.
-5. Busca `miusuario` en todos los archivos y reemplázalo por tu usuario (aparece en las etiquetas `canonical` y `og:url`).
+4. Espera uno o dos minutos y abre `https://jonacruz.github.io`.
+5. Busca `jonacruz` en todos los archivos y reemplázalo por tu usuario (aparece en las etiquetas `canonical` y `og:url`).
 
 ## Vista previa local
 
@@ -97,7 +99,8 @@ Las políticas se redactaron con lo que se sabe de cada app:
 
 - **Edoctronics**: Google AdMob, ATT y formulario de consentimiento RGPD.
 - **Letreo**: Firebase (análisis y diagnóstico), AdMob y compras con StoreKit.
-- **LunaPOS**: datos del negocio, cámara con VisionKit y Firebase. Marcada como borrador hasta el lanzamiento.
+- **LunaPOS**: datos del negocio, cámara con VisionKit y Firebase.
+- **PetsCarnet**: sin cuenta, anuncios ni analítica; datos solo en el iPhone, notificaciones locales, selector de fotos y respaldo exportable.
 
 Comprueba que coincidan con las etiquetas de privacidad que declaraste en App Store Connect (sección *App Privacy*). Si alguna app usa otro SDK o recopila otro dato, agrégalo en la sección "Información que se recopila" y en "Servicios de terceros". Este texto no sustituye asesoría legal.
 
