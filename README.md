@@ -23,13 +23,13 @@ assets/img/                 Favicon e imágenes de las apps
 
 ## URLs para App Store Connect
 
-Reemplaza `miusuario` por tu usuario de GitHub.
+Reemplaza `jonacruz` por tu usuario de GitHub.
 
 | App         | Privacidad                                      | Soporte                                       |
 |-------------|-------------------------------------------------|-----------------------------------------------|
-| Edoctronics | `https://miusuario.github.io/privacy/edoctronics/` | `https://miusuario.github.io/support/#edoctronics` |
-| Letreo      | `https://miusuario.github.io/privacy/letreo/`      | `https://miusuario.github.io/support/#letreo`      |
-| LunaPOS     | `https://miusuario.github.io/privacy/lunapos/`     | `https://miusuario.github.io/support/#lunapos`     |
+| Edoctronics | `https://jonacruz.github.io/privacy/edoctronics/` | `https://jonacruz.github.io/support/#edoctronics` |
+| Letreo      | `https://jonacruz.github.io/privacy/letreo/`      | `https://jonacruz.github.io/support/#letreo`      |
+| LunaPOS     | `https://jonacruz.github.io/privacy/lunapos/`     | `https://jonacruz.github.io/support/#lunapos`     |
 
 Para forzar un idioma en un enlace agrega `?lang=en` o `?lang=es` (por ejemplo, para la ficha en inglés del App Store). Sin el parámetro, el sitio usa el idioma que eligió el visitante o, la primera vez, el idioma del navegador.
 
@@ -60,19 +60,19 @@ Los colores están en las variables de `:root` al inicio de `assets/css/styles.c
 
 ## Publicar en GitHub Pages
 
-1. Crea un repositorio público llamado exactamente `miusuario.github.io`.
+1. Crea un repositorio público llamado exactamente `jonacruz.github.io`.
 2. Sube el contenido de esta carpeta a la raíz de la rama `main`:
    ```bash
    git init
    git add .
    git commit -m "Sitio inicial"
    git branch -M main
-   git remote add origin https://github.com/miusuario/miusuario.github.io.git
+   git remote add origin https://github.com/jonacruz/jonacruz.github.io.git
    git push -u origin main
    ```
 3. En el repositorio ve a **Settings › Pages** y en *Source* elige **Deploy from a branch**, rama `main`, carpeta `/ (root)`.
-4. Espera uno o dos minutos y abre `https://miusuario.github.io`.
-5. Busca `miusuario` en todos los archivos y reemplázalo por tu usuario (aparece en las etiquetas `canonical` y `og:url`).
+4. Espera uno o dos minutos y abre `https://jonacruz.github.io`.
+5. Busca `jonacruz` en todos los archivos y reemplázalo por tu usuario (aparece en las etiquetas `canonical` y `og:url`).
 
 ## Vista previa local
 
