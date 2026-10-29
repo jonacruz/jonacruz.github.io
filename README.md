@@ -11,9 +11,10 @@ apps/index.html             Catálogo
 apps/edoctronics/           Detalle de Edoctronics
 apps/letreo/                Detalle de Letreo
 apps/lunapos/               Detalle de LunaPOS
+apps/petscarnet/            Detalle de PetsCarnet (Próximamente)
 privacy/index.html          Índice de políticas
 privacy/<app>/              Política de privacidad de cada app
-support/index.html          Soporte y FAQ (anclas #edoctronics, #letreo, #lunapos)
+support/index.html          Soporte y FAQ (anclas #edoctronics, #letreo, #lunapos, #petscarnet)
 404.html                    Página de error
 assets/css/styles.css       Estilos y tokens de color
 assets/js/main.js           Idioma, menú móvil y año
@@ -30,6 +31,7 @@ Reemplaza `jonacruz` por tu usuario de GitHub.
 | Edoctronics | `https://jonacruz.github.io/privacy/edoctronics/` | `https://jonacruz.github.io/support/#edoctronics` |
 | Letreo      | `https://jonacruz.github.io/privacy/letreo/`      | `https://jonacruz.github.io/support/#letreo`      |
 | LunaPOS     | `https://jonacruz.github.io/privacy/lunapos/`     | `https://jonacruz.github.io/support/#lunapos`     |
+| PetsCarnet  | `https://jonacruz.github.io/privacy/petscarnet/`  | `https://jonacruz.github.io/support/#petscarnet`  |
 
 Para forzar un idioma en un enlace agrega `?lang=en` o `?lang=es` (por ejemplo, para la ficha en inglés del App Store). Sin el parámetro, el sitio usa el idioma que eligió el visitante o, la primera vez, el idioma del navegador.
 
@@ -98,6 +100,7 @@ Las políticas se redactaron con lo que se sabe de cada app:
 - **Edoctronics**: Google AdMob, ATT y formulario de consentimiento RGPD.
 - **Letreo**: Firebase (análisis y diagnóstico), AdMob y compras con StoreKit.
 - **LunaPOS**: datos del negocio, cámara con VisionKit y Firebase.
+- **PetsCarnet**: sin cuenta, anuncios ni analítica; datos solo en el iPhone, notificaciones locales, selector de fotos y respaldo exportable.
 
 Comprueba que coincidan con las etiquetas de privacidad que declaraste en App Store Connect (sección *App Privacy*). Si alguna app usa otro SDK o recopila otro dato, agrégalo en la sección "Información que se recopila" y en "Servicios de terceros". Este texto no sustituye asesoría legal.
 
