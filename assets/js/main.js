@@ -61,5 +61,9 @@
 
     var year = document.querySelectorAll('[data-year]');
     for (var i = 0; i < year.length; i++) year[i].textContent = new Date().getFullYear();
+
+    // Cuenta las apps con insignia "Disponible" para no actualizar el número a mano
+    var published = document.querySelector('[data-published-count]');
+    if (published) published.textContent = document.querySelectorAll('.app-card .badge:not(.badge-soon)').length;
   });
 })();

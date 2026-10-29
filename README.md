@@ -10,7 +10,7 @@ index.html                  Inicio
 apps/index.html             Catálogo
 apps/edoctronics/           Detalle de Edoctronics
 apps/letreo/                Detalle de Letreo
-apps/lunapos/               Detalle de LunaPOS (Próximamente)
+apps/lunapos/               Detalle de LunaPOS
 privacy/index.html          Índice de políticas
 privacy/<app>/              Política de privacidad de cada app
 support/index.html          Soporte y FAQ (anclas #edoctronics, #letreo, #lunapos)
@@ -97,7 +97,7 @@ Las políticas se redactaron con lo que se sabe de cada app:
 
 - **Edoctronics**: Google AdMob, ATT y formulario de consentimiento RGPD.
 - **Letreo**: Firebase (análisis y diagnóstico), AdMob y compras con StoreKit.
-- **LunaPOS**: datos del negocio, cámara con VisionKit y Firebase. Marcada como borrador hasta el lanzamiento.
+- **LunaPOS**: datos del negocio, cámara con VisionKit y Firebase.
 
 Comprueba que coincidan con las etiquetas de privacidad que declaraste en App Store Connect (sección *App Privacy*). Si alguna app usa otro SDK o recopila otro dato, agrégalo en la sección "Información que se recopila" y en "Servicios de terceros". Este texto no sustituye asesoría legal.
 
